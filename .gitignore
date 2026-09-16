@@ -1,3 +1,43 @@
-secret.txt
+
+# === Python ===
+# Виртуальные окружения
+.venv/
+venv/
+ENV/
+env/
+
+# Кэш и скомпилированные файлы
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+.mypy_cache/
+
+# === JavaScript / Node.js ===
+# Пакеты и зависимости
+node_modules/
+/npm-debug.log*
+/yarn-error.log*
+
+# Сборка и кэш (если используете Vite, Webpack или аналоги)
+dist/
+.parcel-cache/
+.eslintcache
+
+# === Редактор кода (VS Code) ===
+.vscode/
+*.code-workspace
+
+# === Секреты и настройки (Локальные переменные окружения) ===
 .env
-*.log
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+
+# === Системные файлы (macOS / Windows) ===
+.DS_Store
+Thumbs.db
+Desktop.ini
