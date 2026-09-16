@@ -1,21 +1,12 @@
-<!-- 1. Сюда автоматически вставится текст из вашего README.md -->
-<div id="readme-content">Загрузка...</div>
+<html>
+    <head><title>О проекте</title></head>
+        <body>
+            <h1>Это учебный проект по изучение фронтенд и бэкенд частей проектов
+Он поможет быстрее разобраться в изучаемой дисциплине
+Польовователь могут скачать проект для работы с ним https://github.com/Verxaoc/F-B
+Получить помощь по проекту можно в гите https://verxaoc.github.io/F-B/
+Поддерживает проект: Науменко Владислав
+Вносит вклад в проект: Науменко Владислав</h1>
+        </body>
 
-<!-- 2. Подключаем скрипт-конвертер Markdown в HTML -->
-<script src="https://jsdelivr.net"></script>
-
-<!-- 3. Скрипт, который забирает и отображает текст -->
-<script>
-  // Ссылка на "сырой" файл в вашем репозитории (проверьте, main у вас или master)
-  const readmeUrl = 'https://githubusercontent.com';
-
-  fetch(readmeUrl)
-    .then(res => res.text())
-    .then(text => {
-      document.getElementById('readme-content').innerHTML = marked.parse(text);
-    })
-    .catch(err => {
-      document.getElementById('readme-content').innerHTML = 'Не удалось загрузить README.md';
-      console.error(err);
-    });
-</script>
+    </html>
