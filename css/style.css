@@ -62,3 +62,14 @@ footer {
 .section h2 {
   margin-top: 0;
 }
+
+.product-card {
+  margin-bottom: 16px;
+  padding: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.product-card h3 {
+  margin-top: 0;
+}
