@@ -7,33 +7,82 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>F-B Учебный проект</h1>
+    <header>
+        <div class="site-header">
+            <a class="site-logo" href="index.html">ShopProject</a>
+
+            <nav class="site-nav" aria-label="Основная навигация">
+            <ul class="site-nav__list">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#popular">Популярные товары</a></li>
+                <li><a href="#advantages">Преимущества</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            </nav>
+        </div>
+
+    </header>
     
-    <p>Это комплексный учебный проект, созданный для практического изучения и освоения современных подходов в фронтенд и бэкенд разработке.</p>
-    
-    <h2>Особенности проекта</h2>
-    <ul>
-        <li><strong>Fullstack-архитектура:</strong> проект четко разделен на независимые фронтенд и бэкенд части, что позволяет понять принципы их взаимодействия.</li>
-        <li><strong>Практическая база:</strong> идеальная площадка для экспериментов с кодом, тестирования новых библиотек и разбора реальных сценариев разработки.</li>
-        <li><strong>Готов к развертыванию:</strong> содержит базовую конфигурацию для быстрого локального запуска.</li>
-    </ul>
+    <main>
+        <section class="hero">
+            <h1>Учебный интернет-магазин</h1>
+            <p>
+                Это стартовая страница учебного frontend-проекта.
+                В дальнейшем на её основе будет разработан многостраничный сайт
+                интернет-магазина или каталога услуг.
+            </p>
+            <a class="button" href="#popular">Перейти к товарам</a>
+        </section>
 
-    <h2>Используемые технологии</h2>
-    <ul>
-        <li><strong>Языки программирования:</strong> Python (бэкенд), JavaScript (фронтенд)</li>
-        <li><strong>Разметка и стили:</strong> HTML5, CSS3</li>
-        <li><strong>Инструменты и среда:</strong> Git (контроль версий), Visual Studio Code (основная IDE)</li>
-    </ul>
+        <section class="section" id="advantages">
+            <h2>Преимущества проекта</h2>
 
-    <h2>Ссылки проекта</h2>
-    <ul>
-        <li><strong>Исходный код:</strong> <a href="https://github.com" target="_blank">GitHub Репозиторий</a></li>
-        <li><strong>Демо-страница (Фронтенд):</strong> <a href="https://github.io" target="_blank">GitHub Pages</a></li>
-    </ul>
+            <ul class="advantages-list">
+                <li>понятная HTML-структура;</li>
+                <li>семантические блоки страницы;</li>
+                <li>подключение внешнего CSS-файла;</li>
+                <li>подготовка к разработке многостраничного сайта.</li>
+            </ul>
+        </section>
 
-    <div class="footer">
+        <section class="section" id="popular">
+            <h2>Популярные товары</h2>
+
+            <article class="product-card">
+                <h3>Товар 1</h3>
+                <p>Краткое описание учебного товара.</p>
+                <p>Цена: 1000 руб.</p>
+            </article>
+
+            <article class="product-card">
+                <h3>Товар 2</h3>
+                <p>Краткое описание учебного товара.</p>
+                <p>Цена: 1500 руб.</p>
+            </article>
+
+            <article class="product-card">
+                <h3>Товар 3</h3>
+                <p>Краткое описание учебного товара.</p>
+                <p>Цена: 2000 руб.</p>
+            </article>
+        </section>
+
+        <aside class="aside-info">
+            <h2>Информация для студентов</h2>
+            <p>
+                На следующих практических занятиях этот проект будет расширяться:
+                появятся формы, модальное окно, дополнительные страницы, Flex/Grid,
+                БЭМ-структура и адаптивная версия сайта.
+            </p>
+        </aside>
+
+    </main>
+
+    <footer id="contacts">
+        <p>&copy; 2026 Учебный проект. Все права защищены.</p>
+        <p>Дисциплина: Фронтенд и бэкенд разработка</p>
         <p><strong>Автор:</strong> <a href="https://github.com" target="_blank">Науменко Владислав Сергеевич ЭФБО-02-25</a></p>
         <p><em>Проект разработан в учебных целях для ускорения освоения веб-дисциплин.</em></p>
-    </div>
+    </footer>
 </body>
 </html>
