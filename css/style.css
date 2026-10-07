@@ -107,10 +107,34 @@ a:focus-visible {
   cursor: not-allowed;
 }
 
+.breadcrumbs {
+  max-width: var(--container-width);
+  margin: 0 auto var(--space-md);
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.breadcrumbs a {
+  color: var(--color-primary);
+}
+
+.breadcrumbs span::before {
+  content: " / ";
+  color: var(--color-muted);
+}
+
+:target {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 4px;
+}
 
 /* ===============================
    4. Компоненты страницы
    =============================== */
+
+html {
+  scroll-behavior: smooth;
+}
 
 .site-header {
   max-width: 1100px;
